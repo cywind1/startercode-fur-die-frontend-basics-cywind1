@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Principles</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../_data/styles/reset.css" />
+    <link rel="stylesheet" href="../_data/styles/fonts.css" />
+    <link rel="stylesheet" href="../_data/styles/base.css" />
+    <link rel="stylesheet" href="../_data/styles/components.css" />
+    <link rel="stylesheet" href="../_data/styles/variables.css" />
   </head>
 
   <body>
@@ -195,75 +199,58 @@
         </tr>
       </table>
 
-      <form action="" method="get" class="form-example">
-        <div class="form-example">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="des Kommentarautors"
-            required
-          />
-        </div>
-        <div class="form-example">
-          <label for="email">E-Mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Adresse des Autors"
-            required
-          />
-        </div>
-        <div class="form-example">
-          <label for="photo">Profile Foto Upload</label>
-          <input type="file" name="photo" id="photo" required />
-        </div>
-        <div class="form-example">
-          <label for="email">E-Mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Adresse des Autors"
-            required
-          />
-        </div>
-        <div class="form-example">
-          <label for="input">Texteingabe</label>
-          <input
-            type="text"
-            name="input"
-            id="input"
-            placeholder="Feld"
-            required
-          />
-        </div>
-        <div class="form-example">
-          <label for="anonymous">Soll der Autorenname in einer späteren Anzeige anonymisiert werden?</label>
-        <label>
-            <input type="checkbox" value="1" />Ja</label>
-        </label> 
-                <label>
-            <input type="checkbox" value="1" />Nein</label>
-        </label> 
-        </div>
-        
-        <div class="form-example">
-          <label for="data-declaration">Bestätigung, dass die Datenschutzerklärung gelesen wurde</label>
-        <label>
-            <input type="checkbox" value="1" />Ja</label>
-        </label>  
-        </div>
+      <fieldset>
+        <legend>Feedback</legend>
+        <form>
+          <label for="name"
+            >Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="des Kommentarautors"
+              required
+          /></label>
 
-        <div class="form-example">
-          <input type="submit" value="Senden" />
-        </div>
-                <div class="form-example">
-          <input type="reset" value="Zurücksetzen" />
-        </div>
-      </form>
+          <label for="email"
+            >E-Mail
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Adresse des Autors"
+              required
+          /></label>
+
+          <label for="upload"
+            >Upload <input type="file" name="img" id="img"
+          /></label>
+
+          <label for="input"
+            >Texteingabe <input type="text" name="input" id="input" required
+          /></label>
+
+          <label for="anonym"
+            ><input type="checkbox" name="anonym" id="anonym" /> Anonymous
+            Name</label
+          >
+
+          <label for="datenschutz"
+            ><input
+              type="checkbox"
+              name="datenschutz"
+              id="datenschutz"
+              required
+            />
+            Ich akzeptiere die <a href="url">AGB</a> und
+            <a href="url">Datenschutzerklärung</a></label
+          >
+
+          <label for="submit"><input type="submit" /></label>
+
+          <label for="reset"><input type="reset" /></label>
+        </form>
+      </fieldset>
     </main>
   </body>
 </html>

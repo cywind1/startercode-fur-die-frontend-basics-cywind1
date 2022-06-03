@@ -1,0 +1,56 @@
+body {
+  font-family: "IMBPlexSans", "IBMPlexSerif";
+  background-color: var(--lightest);
+  margin: var(--l);
+}
+
+p {
+  color: var(--darkest);
+  text-align: left;
+}
+
+cite {
+  color: var(--lighter);
+  text-align: left;
+}
+
+blockquote {
+  color: var(--light);
+  font-style: italic;
+  font-weight: bold;
+}
+
+span {
+  font-style: italic;
+}
+
+dt {
+  color: var(--lighter);
+  font-weight: bold;
+}
+
+table,
+form {
+  background-color: var(--lighterer);
+  padding: var(--l);
+  margin: var(--l);
+  border: var(--xxxs) solid;
+}
+
+form.form-example {
+  display: table;
+}
+
+div.form-example {
+  display: table-row;
+}
+
+input {
+  display: table-cell;
+  margin: var(--m);
+}
+
+label {
+  display: block;
+  margin: var(--xxxs);
+}
